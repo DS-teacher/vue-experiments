@@ -22,6 +22,14 @@ const routes = [
   {
     path: "/exp02",
     component: () => import("@/views/exp02/exp02.vue")
+  },
+  {
+    path: "/exp03",
+    component: () => import("@/views/exp03/exp03.vue")
+  },
+  {
+    path: "/exp04",
+    component: () => import("@/views/exp04/exp04.vue")
   }
 ];
 
