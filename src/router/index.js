@@ -38,6 +38,10 @@ const routes = [
   {
     path: "/exp06",
     component: () => import("@/views/exp06/exp06.vue")
+  },
+  {
+    path: "/exp07",
+    component: () => import("@/views/exp07/exp07.vue")
   }
 ];
 
