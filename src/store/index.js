@@ -9,7 +9,8 @@ export default new Vuex.Store({
       name: "BO",
       address: "956"
     },
-    users: []
+    users: [],
+    exception: ""
   },
   mutations: {
     changeAddress(state, data) {
@@ -20,6 +21,9 @@ export default new Vuex.Store({
     },
     getUsers(state, data) {
       state.users = data;
+    },
+    getException(state, data) {
+      state.exception = data;
     }
   },
   actions: {
@@ -29,6 +33,9 @@ export default new Vuex.Store({
     async getUsers({ commit }) {
       let resp = await axios.get("users");
       commit("getUsers", resp.data);
+    },
+    async getException() {
+      let resp = await axios.get("nodatas");
     }
   },
   modules: {}

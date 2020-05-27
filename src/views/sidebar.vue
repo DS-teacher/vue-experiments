@@ -8,6 +8,7 @@
       <li><router-link to="/exp05">表单双向绑定实验</router-link></li>
       <li><router-link to="/exp06">Vuex实验</router-link></li>
       <li><router-link to="/exp07">Axios网络请求实验</router-link></li>
+      <li><router-link to="/exp08">Axios拦截器实验</router-link></li>
     </ul>
   </div>
 </template>

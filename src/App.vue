@@ -2,12 +2,14 @@
   <div id="app">
     <sidebar id="sidebar" />
     <router-view id="route" />
+    <alert />
   </div>
 </template>
 <script>
 import sidebar from "@/views/sidebar";
+import alert from "@/components/alertdialog";
 export default {
-  components: { sidebar }
+  components: { sidebar, alert }
 };
 </script>
 <style scoped>
